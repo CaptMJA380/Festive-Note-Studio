@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-display: 'Cinzel', serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAF7F2;
+    color: #24211E;
+  }
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+/* Luxury Paper Subtle Texture */
+.texture-paper-ivory {
+  background-color: #FAF6EE;
+  background-image: radial-gradient(rgba(197, 160, 89, 0.05) 1px, transparent 1px);
+  background-size: 12px 12px;
+}
+
+.texture-paper-burgundy {
+  background-color: #480C1B;
+  background-image: radial-gradient(rgba(224, 183, 103, 0.08) 1px, transparent 1px);
+  background-size: 12px 12px;
+}
+
+.texture-paper-cream {
+  background-color: #F7F2E7;
+  background-image: radial-gradient(rgba(184, 134, 11, 0.05) 1px, transparent 1px);
+  background-size: 10px 10px;
+}
+
+.texture-paper-corporate {
+  background-color: #FCFAF6;
+  background-image: radial-gradient(rgba(191, 155, 74, 0.04) 1px, transparent 1px);
+  background-size: 12px 12px;
+}
+
+/* Subtle Champagne Gold Foil Accent */
+.gold-accent-text {
+  background: linear-gradient(135deg, #A88132 0%, #D4AF37 35%, #B8860B 70%, #8C6A28 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-burgundy-text {
+  background: linear-gradient(135deg, #FDE68A 0%, #E0B767 50%, #F5D485 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Stationery Card Elevation (Looks like physical 350 GSM cotton stock) */
+.card-elevation {
+  box-shadow: 
+    0 1px 3px rgba(36, 33, 30, 0.04),
+    0 8px 24px -4px rgba(36, 33, 30, 0.08),
+    0 24px 48px -12px rgba(36, 33, 30, 0.12);
+}
+
+.card-elevation-hover {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-elevation-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 
+    0 4px 6px rgba(36, 33, 30, 0.05),
+    0 16px 36px -6px rgba(36, 33, 30, 0.12),
+    0 32px 64px -12px rgba(36, 33, 30, 0.16);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F4EFE6;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9CEB8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #BFA87E;
+}
