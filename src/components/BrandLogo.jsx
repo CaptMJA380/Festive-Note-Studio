@@ -121,13 +121,13 @@ export default function BrandLogo({
 
       {/* Wordmark */}
       <div className="flex flex-col">
-        <span className={`font-serif text-xl sm:text-2xl font-normal tracking-wide transition-colors leading-tight ${
+        <span className={`font-serif text-lg sm:text-2xl font-normal tracking-wide transition-colors leading-tight whitespace-nowrap ${
           light ? 'text-[#FAF7F2]' : 'text-[#2A231C] group-hover:text-[#8C6A28]'
         }`}>
           {BUSINESS_CONFIG.BRAND_NAME}
         </span>
         {showSubtitle && (
-          <span className={`text-[8.5px] sm:text-[9px] uppercase tracking-[0.22em] font-sans -mt-0.5 ${
+          <span className={`text-[8.5px] sm:text-[9px] uppercase tracking-[0.22em] font-sans -mt-0.5 whitespace-nowrap hidden sm:block ${
             light ? 'text-[#C5A059]' : 'text-[#786F64]'
           }`}>
             Personalised Corporate Stationery • Pune
