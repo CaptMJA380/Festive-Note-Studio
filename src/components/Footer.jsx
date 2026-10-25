@@ -6,6 +6,7 @@ import {
   getTelUrl 
 } from '../config/business';
 import { ShieldCheck, MessageSquare, Mail, Phone, MapPin } from 'lucide-react';
+import BrandLogo from './BrandLogo';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -19,12 +20,7 @@ export default function Footer() {
           
           {/* Column 1: Brand & Description (5 cols) */}
           <div className="md:col-span-5">
-            <span className="font-serif text-2xl font-normal text-[#2A231C] tracking-wide block">
-              {BUSINESS_CONFIG.BRAND_NAME}
-            </span>
-            <span className="text-[10px] uppercase tracking-[0.2em] font-sans text-[#786F64] block mt-0.5">
-              Personalised Corporate Stationery • Pune
-            </span>
+            <BrandLogo />
             <p className="mt-4 text-xs text-[#6B6258] font-light leading-relaxed max-w-sm">
               We partner with corporate hamper makers and gifting companies across Pune and Maharashtra to deliver bespoke, individually personalised Diwali greeting cards as a seamless add-on to client gift hampers.
             </p>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
 import { BUSINESS_CONFIG } from '../config/business';
+import BrandLogo from './BrandLogo';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,14 +44,9 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         
-        {/* Brand Name / Elegant Text-based Logo */}
-        <a href="#" className="flex flex-col group">
-          <span className="font-serif text-xl sm:text-2xl font-normal text-[#2A231C] tracking-wide transition-colors group-hover:text-[#8C6A28]">
-            {BUSINESS_CONFIG.BRAND_NAME}
-          </span>
-          <span className="text-[9px] uppercase tracking-[0.2em] font-sans text-[#786F64] -mt-0.5">
-            Personalised Corporate Stationery • Pune
-          </span>
+        {/* Brand Logo & Name */}
+        <a href="#" className="flex items-center">
+          <BrandLogo />
         </a>
 
         {/* Desktop Navigation Links */}
